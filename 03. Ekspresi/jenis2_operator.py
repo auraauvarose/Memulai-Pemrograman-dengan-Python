@@ -47,3 +47,27 @@ print(not True)
 print(not False)
 
 # Operator Assignment
+# +=
+x = 11
+x += 5
+print(x)
+
+# -=
+x = 11
+x -= 5
+print(x)
+
+# *=
+x = 11
+x *= 5
+print(x)
+
+# /=
+x = 11
+x /= 5
+print(x)
+
+#%=
+x = 11
+x%= 5
+print(x)
