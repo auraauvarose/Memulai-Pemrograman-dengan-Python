@@ -2,11 +2,11 @@
 total_belanja = int(input("Masukkan jumlah transaksi: "))
 total_harga = 0
 
-for i in range(1, total_belanja + 1):
-    harga_produk = int(input(f"Masukkan harga barang transaksi ke-{i}: "))
+for perulangan_harga in range(1, total_belanja + 1):
+    harga_produk = int(input(f"Masukkan harga barang transaksi ke-{perulangan_harga}: "))
     while harga_produk <= 0:
         print("harga barang tiadak boleh nol atau negatif, masukan ulang!")
-        harga_produk = int(input(f"Masukkan harga barang transaksi ke-{i}: "))
+        harga_produk = int(input(f"Masukkan harga barang transaksi ke-{perulangan_harga}: "))
 
     if harga_produk > 150000:
         diskon = 0.20
