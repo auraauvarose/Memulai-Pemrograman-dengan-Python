@@ -28,7 +28,7 @@ def show_main(root):
     entry_nama.grid(row=0, column=1, padx=5, pady=5)
 
     lbl_nim = tk.Label(frame, text="NIM :", bg="black", fg="white",
-                       font=("Arial", 11, "bold"), width=8, anchor="w")
+    font=("Arial", 11, "bold"), width=8, anchor="w")
     lbl_nim.grid(row=1, column=0, padx=5, pady=5, sticky="w")
     entry_nim = tk.Entry(frame, font=("Arial", 11), width=25)
     entry_nim.grid(row=1, column=1, padx=5, pady=5)
@@ -41,7 +41,7 @@ def show_main(root):
 
     # ── Text display ──
     text_display = tk.Text(frame, width=30, height=5,
-                           font=("Arial", 10, "bold"), bg="white", fg="black")
+        font=("Arial", 10, "bold"), bg="white", fg="black")
     text_display.grid(row=6, column=1, pady=10, sticky="w")
 
     # ── Button callbacks ──
@@ -75,19 +75,19 @@ def show_main(root):
 
     # ── Buttons ──
     btn_tambah = tk.Button(frame, text="Tambah Data", bg="grey", fg="white",
-                           font=("Arial", 10, "bold"), command=tambah_data)
+    font=("Arial", 10, "bold"), command=tambah_data)
     btn_tambah.grid(row=3, column=1, padx=5, pady=10, sticky="w")
 
     btn_clear = tk.Button(frame, text="Clear", bg="grey", fg="white",
-                          font=("Arial", 10, "bold"), width=8, command=clear_data)
+    font=("Arial", 10, "bold"), width=8, command=clear_data)
     btn_clear.grid(row=3, column=1, padx=5, pady=5, sticky="e")
 
     btn_logout = tk.Button(frame, text="Logout", bg="red", fg="white",
-                           font=("Arial", 10, "bold"), width=8, command=logout)
+    font=("Arial", 10, "bold"), width=8, command=logout)
     btn_logout.grid(row=4, column=1, padx=5, pady=5, sticky="ew")
 
     btn_save = tk.Button(frame, text="Save", bg="green", fg="white",
-                         font=("Arial", 10, "bold"), width=8, command=save_data)
+    font=("Arial", 10, "bold"), width=8, command=save_data)
     btn_save.grid(row=5, column=1, padx=5, pady=5, sticky="we")
 
 
@@ -109,8 +109,8 @@ def show_login(root):
 
     # ── Judul ──
     lbl_title = tk.Label(frame, text="APLIKASI KESISWAAN",
-                         bg="green", fg="white",
-                         font=("Arial", 13, "bold"))
+    bg="green", fg="white",
+    font=("Arial", 13, "bold"))
     lbl_title.grid(row=0, column=0, columnspan=2, pady=(0, 15))
 
     # ── Username ──
@@ -145,8 +145,8 @@ def show_login(root):
 
     # ── Tombol Login ──
     btn_login = tk.Button(frame, text="Login", bg="darkblue", fg="white",
-                          font=("Arial", 11, "bold"), width=18,
-                          command=do_login)
+    font=("Arial", 11, "bold"), width=18,
+    command=do_login)
     btn_login.grid(row=4, column=0, columnspan=2, pady=(12, 0))
 
     # Enter key juga bisa login
@@ -156,6 +156,7 @@ def show_login(root):
     lbl_hint = tk.Label(frame, text="(user: admin | pass: 1234)",
                         bg="green", fg="#ccffcc", font=("Arial", 8))
     lbl_hint.grid(row=5, column=0, columnspan=2, pady=(6, 0))
+    
 
 
 # ══════════════════════════════════════════════════════════════════
